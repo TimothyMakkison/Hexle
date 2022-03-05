@@ -10,51 +10,54 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Guess the hex color in 5 tries. After each guess, the color of the tiles
+        will change to show how close your guess was to the word.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
+        <Cell value="2" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="D"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="3" />
+        <Cell value="4" />
+        <Cell value="8" />
+        <Cell value="F" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        The symbol D is in the hex color and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="1" />
+        <Cell value="4" />
+        <Cell value="A" />
+        <Cell value="0" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="B"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="9" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        The symbol B is in the hex color but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
+        <Cell value="7" />
+        <Cell value="3" />
         <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell isRevealing={true} isCompleted={true} value="1" status="absent" />
+        <Cell value="2" />
+        <Cell value="0" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        The symbol 1 is not in the hex color in any spot.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">

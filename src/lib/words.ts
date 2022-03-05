@@ -4,11 +4,10 @@ import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 
+const hexColorRegex = new RegExp('^(?:[0-9a-fA-F]{6})$')
+
 export const isWordInWordList = (word: string) => {
-  return (
-    WORDS.includes(localeAwareLowerCase(word)) ||
-    VALID_GUESSES.includes(localeAwareLowerCase(word))
-  )
+  return hexColorRegex.test(word)
 }
 
 export const isWinningWord = (word: string) => {
