@@ -1,6 +1,7 @@
 {
   "name": "game",
   "version": "0.1.0",
+  "homepage": "https://TimothyMakkison.github.io/Hexle",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -24,6 +25,8 @@
     "grapheme-splitter": "1.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "fix": "prettier --write src",
