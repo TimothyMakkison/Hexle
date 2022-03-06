@@ -1,6 +1,7 @@
 import { getGuessStatuses } from '../../lib/statuses'
 import { Cell } from './Cell'
 import { unicodeSplit } from '../../lib/words'
+import { ColorCell } from './ColorCell'
 
 type Props = {
   guess: string
@@ -23,6 +24,7 @@ export const CompletedRow = ({ guess, isRevealing }: Props) => {
           isCompleted
         />
       ))}
+      <ColorCell guessColor={guess} isRevealing={isRevealing} isCompleted />
     </div>
   )
 }

@@ -40,6 +40,10 @@
   animation-name: revealAbsentCharCell;
 }
 
+.cell-reveal.color {
+  animation-name: revealColorCell;
+}
+
 .cell-reveal.correct {
   animation-name: revealCorrectCharCell;
 }
@@ -79,6 +83,22 @@ svg.cursor-pointer:hover {
 
 .right-icons {
   display: flex;
+}
+
+@keyframes revealColorCell {
+  0% {
+    transform: rotateX(0deg);
+    background-color: gray;
+  }
+  50% {
+    background-color: var(--default-cell-bg-color);
+    color: var(--default-cell-text-color);
+  }
+  50.1% {
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
 }
 
 @keyframes revealAbsentCharCell {

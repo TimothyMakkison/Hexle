@@ -214,7 +214,7 @@ function App() {
     // chars have been revealed
     setTimeout(() => {
       setIsRevealing(false)
-    }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
+    }, REVEAL_TIME_MS * (MAX_WORD_LENGTH + 1))
 
     const winningWord = isWinningWord(currentGuess)
 
