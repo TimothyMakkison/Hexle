@@ -20,7 +20,7 @@ const styles = {
 
 export function ColorSample({ color }: IColorSampleProps) {
   return (
-    <div className="flex justify-center mb-4" style={{}}>
+    <div className="flex justify-center mb-2" style={{}}>
       <div className={classes} style={styles}></div>
     </div>
   )
