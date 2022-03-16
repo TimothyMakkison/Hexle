@@ -5,6 +5,8 @@ This is a variation on Wordle where you guess the RGB values of an unknown color
 
 [**Try out the demo!**](https://timothymakkison.github.io/Hexle/) at [https://timothymakkison.github.io/Hexle/](https://timothymakkison.github.io/Hexle/)
 
+![screenshot](./screenshot.PNG)
+
 ## Build and run
 
 ### To Run Locally:
